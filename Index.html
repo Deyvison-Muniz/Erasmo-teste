@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erasmo Materiais de Construção</title>
+
+<!-- Fontes: Oswald para títulos (visual de placa/galpão), Source Sans 3 para texto, JetBrains Mono pra números/estatísticas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Styles.css">
+<!-- ===================== HEADER ===================== -->
+<header>
+  <nav class="nav container">
+    <a href="#topo" class="logo">Erasmo<span>materiais de construção</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#categorias">Produtos</a></li>
+      <li><a href="#porque">Por que a Erasmo</a></li>
+      <li><a href="#contato">Loja &amp; contato</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <span class="nav-phone">(00) 00000-0000</span>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="topo">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Erasmo materiais de construção</span>
+      <h1>Do alicerce ao acabamento, a Erasmo tá <em>com você</em>.</h1>
+      <p>Estoque completo, preço justo e gente que entende de obra. Compre certo, sem desperdício e sem complicação.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.51 21.5 10.21 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.55 0-3-.41-4.27-1.13l-.3-.18-3.13.82.84-3.05-.2-.32A7.9 7.9 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+          Pedir pelo WhatsApp
+        </a>
+        <a href="#categorias" class="btn btn-outline">Ver categorias</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <!-- Ilustração simples de uma carriola, feita em SVG (sem precisar de foto) -->
+      <svg width="320" height="280" viewBox="0 0 320 280" fill="none">
+        <ellipse cx="160" cy="250" rx="120" ry="10" fill="#0E2438"/>
+        <circle cx="95" cy="225" r="26" stroke="#E2640C" stroke-width="8"/>
+        <line x1="120" y1="225" x2="220" y2="150" stroke="#D9E1E8" stroke-width="8" stroke-linecap="round"/>
+        <line x1="95" y1="225" x2="195" y2="150" stroke="#D9E1E8" stroke-width="8" stroke-linecap="round"/>
+        <path d="M150 150 H280 L255 90 H175 Z" fill="#E2640C"/>
+        <rect x="180" y="60" width="22" height="22" fill="#D9E1E8"/>
+        <rect x="208" y="60" width="22" height="22" fill="#D9E1E8"/>
+        <rect x="236" y="60" width="22" height="22" fill="#D9E1E8"/>
+        <rect x="194" y="38" width="22" height="22" fill="#D9E1E8"/>
+        <rect x="222" y="38" width="22" height="22" fill="#D9E1E8"/>
+        <line x1="220" y1="150" x2="240" y2="225" stroke="#D9E1E8" stroke-width="8" stroke-linecap="round"/>
+        <line x1="195" y1="150" x2="215" y2="225" stroke="#D9E1E8" stroke-width="8" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAIXA TRENA (elemento de assinatura visual) ===================== -->
+<div class="tape" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <!-- marcações tipo trena de obra, em laranja -->
+    <g stroke="#16324F" stroke-width="2">
+      <!-- linha base -->
+      <line x1="0" y1="36" x2="1200" y2="36" stroke-width="1"/>
+    </g>
+    <g stroke="#16324F" stroke-width="2" id="ticks"></g>
+  </svg>
+</div>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div>
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Anos de história</div>
+    </div>
+    <div>
+      <div class="stat-num">800+</div>
+      <div class="stat-label">Itens em estoque</div>
+    </div>
+    <div>
+      <div class="stat-num">6x</div>
+      <div class="stat-label">Dias de atendimento</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-art">
+      <svg width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="#E2640C" stroke-width="1.4">
+        <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <span class="eyebrow">Quem é a Erasmo</span>
+      <h2>Confiança é o material mais importante de qualquer obra</h2>
+      <p>A Erasmo Materiais de Construção existe pra resolver o maior problema de quem constrói ou reforma: confiança. Aqui você encontra cimento, areia, tijolo, ferragens, tintas e acabamento — tudo no mesmo lugar, com gente que entende de obra e ajuda você a comprar certo, sem desperdício.</p>
+      <p>Atendemos tanto o profissional que tá na lida todo dia quanto quem vai encarar aquela reforma de fim de semana. Pode chegar com a planta debaixo do braço ou só com uma dúvida — a gente resolve.</p>
+      <a href="#contato" class="btn btn-outline">Conhecer a loja</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATEGORIAS ===================== -->
+<section class="categorias" id="categorias">
+  <div class="container">
+    <div class="cat-head">
+      <span class="eyebrow">No estoque</span>
+      <h2>Tudo pra obra, num só lugar</h2>
+    </div>
+
+    <div class="cat-grid">
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h18M3 15h18M3 3h18v18H3z"/></svg>
+        <h3>Cimento, areia e brita</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="7" height="5"/><rect x="14" y="9" width="7" height="5"/><rect x="8" y="3" width="8" height="5"/></svg>
+        <h3>Tijolos e blocos</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        <h3>Material elétrico</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c2 4-3 5-3 9a3 3 0 1 0 6 0c0-2-1-3-1-3"/></svg>
+        <h3>Material hidráulico</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9.5 15 13 6h4l-2 5"/></svg>
+        <h3>Ferragens e ferramentas</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21c4-1 6-3 12-9l3-3-3-3-3 3c-6 6-8 8-9 12z"/></svg>
+        <h3>Tintas e acabamento</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        <h3>Madeiras</h3>
+      </div>
+      <div class="cat-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+        <h3>Pisos e revestimentos</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POR QUE ESCOLHER ===================== -->
+<section class="porque" id="porque">
+  <div class="container">
+    <span class="eyebrow">Diferenciais</span>
+    <h2 style="font-size:2rem; margin:10px 0 36px;">Por que escolher a Erasmo</h2>
+
+    <div class="porque-grid">
+      <div class="porque-item">
+        <div class="num">01</div>
+        <h3>Estoque completo</h3>
+        <p>Tudo pra sua obra num só lugar, sem precisar rodar a cidade.</p>
+      </div>
+      <div class="porque-item">
+        <div class="num">02</div>
+        <h3>Entrega rápida</h3>
+        <p>Levamos o material até a sua obra, na região atendida pela loja.</p>
+      </div>
+      <div class="porque-item">
+        <div class="num">03</div>
+        <h3>Atendimento que entende de obra</h3>
+        <p>Equipe que ajuda a calcular quantidade certa e evitar desperdício.</p>
+      </div>
+      <div class="porque-item">
+        <div class="num">04</div>
+        <h3>Preço justo</h3>
+        <p>Sem letra miúda: o preço que você vê é o que você paga.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO / LOJA ===================== -->
+<section class="contato" id="contato">
+  <div class="container contato-grid">
+    <div>
+      <span class="eyebrow">Venha nos visitar</span>
+      <h2>Loja &amp; contato</h2>
+
+      <ul class="contato-info">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><strong>Endereço</strong>Rua Exemplo, 123 — Bairro, Cidade/UF</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><strong>Horário</strong>Segunda a sábado, 7h às 18h</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>
+          <div><strong>Telefone / WhatsApp</strong>(00) 00000-0000</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <div><strong>E-mail</strong>contato@erasmomateriais.com.br</div>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn-primary" style="margin-top:8px;">Falar no WhatsApp</a>
+    </div>
+
+    <div class="map-box">
+      Espaço reservado para o mapa do Google Maps<br>(adicione o endereço real e gere o link de incorporação)
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container footer-grid">
+    <span class="footer-logo">Erasmo Materiais de Construção</span>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.51 21.5 10.21 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    &copy; 2026 Erasmo Materiais de Construção. Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- Botão flutuante de WhatsApp -->
+<a href="#" class="whats-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.51 21.5 10.21 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.55 0-3-.41-4.27-1.13l-.3-.18-3.13.82.84-3.05-.2-.32A7.9 7.9 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+</a>
+
+<script>
+  // Abre/fecha o menu no celular
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.style.display === 'flex';
+    navLinks.style.display = isOpen ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '64px';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = '#16324F';
+    navLinks.style.padding = '20px 24px';
+    navLinks.style.gap = '16px';
+  });
+
+  // Gera as marcações da "trena" (faixa laranja) dinamicamente
+  const ticksGroup = document.getElementById('ticks');
+  const tapeWidth = 1200;
+  const step = 20;
+  let ticksSVG = '';
+  for (let x = 0; x <= tapeWidth; x += step) {
+    const isBig = (x / step) % 5 === 0;
+    const h = isBig ? 16 : 8;
+    ticksSVG += `<line x1="${x}" y1="36" x2="${x}" y2="${36 - h}" />`;
+  }
+  ticksGroup.innerHTML = ticksSVG;
+</script>
+
+</body>
+</html>
